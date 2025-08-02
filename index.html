@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="js csstransitions">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/fav.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/skins/red.css" title="red" />
+    <link rel="stylesheet" href="/assets/css/skins/blue.css" title="blue" disabled />
+    <link rel="stylesheet" href="/assets/css/skins/yellow.css" title="yellow" disabled />
+    <link rel="stylesheet" href="/assets/css/skins/purple.css" title="purple" disabled />
+    <link rel="stylesheet" href="/assets/css/skins/orange.css" title="orange" disabled />
+    <link rel="stylesheet" href="/assets/css/skins/green.css" title="green" disabled />
+    <link rel="stylesheet" href="/assets/css/skins/magenta.css" title="magenta" disabled />
+    <link rel="stylesheet" href="/assets/css/skins/yellowgreen.css" title="yellowgreen" disabled />
+    <link rel="stylesheet" href="/assets/css/skins/blueviolet.css" title="blueviolet" disabled />
+    <link rel="stylesheet" href="/assets/css/skins/goldenrod.css" title="goldenrod" disabled />
+  </head>
+  
+  <body class="">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+
+  <script>
+      if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+      } else {
+          document.documentElement.classList.remove("dark");
+      }
+  </script>
+</html>
